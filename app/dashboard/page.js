@@ -31,8 +31,14 @@ export default function Dashboard() {
             </div>
             <div className="flex items-center">
               <button
+                onClick={() => router.push('/localisation')}
+                className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 mr-4"
+              >
+                Localisation
+              </button>
+              <button
                 onClick={handleLogout}
-                className="ml-4 px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700"
+                className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700"
               >
                 Déconnexion
               </button>
